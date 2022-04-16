@@ -1,0 +1,167 @@
+/*--------------website created by - Eduardo Souza -------------- */ 
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=IBM+Plex+Mono:wght@400;500;600;700&family=Josefin+Sans:wght@700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: #0E091B;
+    color: white;
+}
+header{
+    max-width: 1150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 32px;
+    text-transform: uppercase;
+}
+header h1{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+span{
+    color: #873EFF;
+}
+li{
+    display: inline;
+}
+li a{
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    font-size: 16px;
+} 
+.navbar{
+    padding-right: 92px;
+}
+.navbar2{
+    border: 1px #873EFF solid;
+     padding: 14px 31px;
+     border-radius: 3px;
+}
+.navtwo a:hover{
+    background-color: #873EFF;
+    transition: 0.8s;
+}
+main{
+    width: 1150px;
+    margin: auto;
+}
+#textp{
+    text-transform: uppercase;
+    color: #04D361;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "IBM Plex Mono", sans-serif;
+    padding-left: 4px;
+    margin-bottom: -13px
+;
+
+}
+.conteudo{
+    padding-top: 80px;
+}
+.conteudo h2{
+    padding-top: 22px;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: "IBM Plex Mono", sans-serif;
+}
+#textp2{
+    padding-top: 20px;
+    padding-left: 4px;
+    font-size: 20px;
+    font-family: "DM Sans", sans-serif;
+    color: #AEAEAE;
+    line-height: 38px;
+    width: 756px;
+}
+.conteiner{
+    width: 601px;
+    height: 484px;
+    border: #873EFF 1px solid;
+    border-radius: 6px;
+    background-color:  #171228;
+    position: relative;
+}
+.fundo{
+    width: 500px;
+    height: 222px;
+    
+    margin: auto;
+    margin-top: 23px;
+    background-color: #0E091B;
+}
+img{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 14%;
+    left: 40%;
+}
+.principal h3{
+    font-size: 24px;
+    font-family: "IBM Plex Mono", Helvetica, sans-serif;
+    padding: 15px 25px;
+}
+.principal p{
+    font-family: "DM Sans", sans-serif;
+    color: #AEAEAE;
+    line-height: 30px;
+    padding: 10px 25px;
+    font-size: 18px;
+}
+.btns{
+    display: flex;  
+}
+.btn1, .btn2{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    width: 165px;
+    height: 33px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn1{
+    background-color: #04D361;
+    margin: 28px 12px 16px 25px;
+}
+.btn2{
+    background-color: transparent;
+    border: #04D361 1px solid;
+    color: white;
+    margin: 28px 15px;
+}
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+}
+.conteiner{
+    flex: 1 1 100px;
+    margin: 10px;
+}
+footer{
+    max-width: 1130px;
+    margin: 26px auto;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+footer > .logo{
+    font-size: 48px;
+    font-family: "Josefin Sans", Helvetica, sans-serif;
+    color: #873EFF;
+}
+footer > p{
+    font-size: 18px;
+    font-family: "IBM Plex Mono", Helvetica, sans-serif;
+}
+
+/* responsividade */ 
