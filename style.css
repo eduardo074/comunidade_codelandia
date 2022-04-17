@@ -219,16 +219,11 @@ footer > p{
     .fundo{
         width: 351px;
     }
-    .btns{
-        flex-direction: column;
-        position: absolute;
-        top: 73%;
-        left: 17%;
     
-    }
-    .btn2{
-        margin-top: 0px;
-        margin-left: 25px;
+    .btns button{
+        width: 100%;
+        
+
     }
 }
 @media (max-width:452px){
@@ -267,11 +262,7 @@ footer > p{
         width: 301px;
         
     }
-    .btns{
-        position: absolute;
-        top: 73%;
-        left: 7%
-    }
+   
 
     .navbar,.navbar2{
         font-size: 70%;
