@@ -4,14 +4,23 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=IBM+Plex+Mono:wght@400;500;600;700&family=Josefin+Sans:wght@700&display=swap');
 
 *{
+    box-sizing: border-box;
     margin: 0%;
     padding: 0%;
 }
-body{
+html{
+    font-size: 62.5%;
+}
+html, body{
     background-color: #0E091B;
     color: white;
+    height: 100vh;
+}
+body{
+    font-size: 1.6rem;
 }
 header{
+    width: 90%;
     max-width: 1150px;
     display: flex;
     align-items: center;
@@ -22,7 +31,7 @@ header{
 }
 header h1{
     font-family: "Josefin Sans", sans-serif;
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 700;
 }
 span{
@@ -35,33 +44,33 @@ li a{
     text-decoration: none;
     font-family: "DM Sans", sans-serif;
     color: white;
-    font-size: 16px;
+    font-size: 1.6rem;
 } 
 .navbar{
     padding-right: 92px;
 }
 .navbar2{
     border: 1px #873EFF solid;
-     padding: 14px 31px;
-     border-radius: 3px;
+    padding: 14px 31px;
+    border-radius: 3px;
 }
 .navtwo a:hover{
     background-color: #873EFF;
     transition: 0.8s;
 }
 main{
-    width: 1150px;
+    width: 90%;
+    max-width: 1150px;
     margin: auto;
 }
 #textp{
     text-transform: uppercase;
     color: #04D361;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
     font-family: "IBM Plex Mono", sans-serif;
     padding-left: 4px;
-    margin-bottom: -13px
-;
+    margin-bottom: -13px;
 
 }
 .conteudo{
@@ -69,18 +78,19 @@ main{
 }
 .conteudo h2{
     padding-top: 22px;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 600;
     font-family: "IBM Plex Mono", sans-serif;
 }
 #textp2{
     padding-top: 20px;
     padding-left: 4px;
-    font-size: 20px;
+    font-size: 2rem;
     font-family: "DM Sans", sans-serif;
     color: #AEAEAE;
-    line-height: 38px;
-    width: 756px;
+    line-height: 3.8rem;
+    width: 90%;
+    max-width: 756px;
 }
 .conteiner{
     width: 601px;
@@ -93,7 +103,6 @@ main{
 .fundo{
     width: 500px;
     height: 222px;
-    
     margin: auto;
     margin-top: 23px;
     background-color: #0E091B;
@@ -106,16 +115,16 @@ img{
     left: 40%;
 }
 .principal h3{
-    font-size: 24px;
+    font-size: 2.4rem;
     font-family: "IBM Plex Mono", Helvetica, sans-serif;
     padding: 15px 25px;
 }
 .principal p{
     font-family: "DM Sans", sans-serif;
     color: #AEAEAE;
-    line-height: 30px;
+    line-height: 3rem;
     padding: 10px 25px;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 .btns{
     display: flex;  
@@ -148,6 +157,7 @@ img{
     margin: 10px;
 }
 footer{
+    width: 90%;
     max-width: 1130px;
     margin: 26px auto;
     display: flex;
@@ -155,13 +165,133 @@ footer{
     justify-content: space-between;
 }
 footer > .logo{
-    font-size: 48px;
+    font-size: 4.8rem;
     font-family: "Josefin Sans", Helvetica, sans-serif;
     color: #873EFF;
 }
 footer > p{
-    font-size: 18px;
+    font-size: 1.8rem;
     font-family: "IBM Plex Mono", Helvetica, sans-serif;
 }
 
-/* responsividade */ 
+/* responsividade 1.0*/ 
+
+@media (max-width:874px){
+    html{
+        font-size: 50%;
+    }
+}
+@media (max-width:708px){
+    html{
+        font-size: 38%;
+    }
+}
+@media (max-width:636px){
+    .navbar{
+        padding-right: 43px;
+    }
+    .navbar2{
+        padding: 10px 10px;
+    }
+}
+@media (max-width:576px){
+    html{
+        font-size: 30%;
+    }
+    
+    .navbar{
+        padding-right: 20px;
+    }
+
+    .conteiner{
+        width: 401px;
+        
+    }
+    .fundo{
+        width: 381px;
+    }
+}
+@media (max-width:506px){
+    .conteiner{
+        width: 301px;
+        
+    }
+    .fundo{
+        width: 351px;
+    }
+    .btns{
+        flex-direction: column;
+        position: absolute;
+        top: 73%;
+        left: 17%;
+    
+    }
+    .btn2{
+        margin-top: 0px;
+        margin-left: 25px;
+    }
+}
+@media (max-width:452px){
+    
+    .navbar,.navbar2{
+        font-size: 80%;
+    }
+    .navbar{
+        padding-right: 10px;
+    }
+    .navbar2{
+        padding: 5px 5px;
+    }
+    .conteiner{
+        width: 301px;
+        
+    }
+    .fundo{
+        width: 250px;
+    }
+    header h1{
+        font-size: 140% ;
+    }
+    
+}
+@media(max-width:420px){
+    .conteudo h2 {
+        font-size: 300%;
+    }
+}
+@media (max-width:344px){
+    .conteudo h2 {
+        font-size: 250%;
+    }
+    .conteiner{
+        width: 301px;
+        
+    }
+    .btns{
+        position: absolute;
+        top: 73%;
+        left: 7%
+    }
+
+    .navbar,.navbar2{
+        font-size: 70%;
+    }
+    .navbar{
+        padding-right: 5px;
+    }
+    .navbar2{
+        padding: 3px 3px;
+    }
+    .conteiner{
+        width: 301px;
+        
+    }
+    .fundo{
+        width: 250px;
+    }
+    header h1{
+        font-size: 130% ;
+    }
+
+
+}
