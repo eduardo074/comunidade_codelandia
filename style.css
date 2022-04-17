@@ -188,19 +188,18 @@ footer > p{
 }
 @media (max-width:636px){
     .navbar{
-        padding-right: 43px;
+        padding-right: 15px;
     }
     .navbar2{
         padding: 10px 10px;
     }
 }
 @media (max-width:576px){
-    html{
-        font-size: 30%;
+    .conteudo h2{
+        font-size: 300%;
     }
-    
     .navbar{
-        padding-right: 20px;
+        padding-right: 15px;
     }
 
     .conteiner{
@@ -225,62 +224,96 @@ footer > p{
     }
 }
 @media (max-width:452px){
-    
-    .navbar,.navbar2{
-        font-size: 80%;
+
+    nav{
+        display: none;
     }
-    .navbar{
-        padding-right: 10px;
+    .one1,.two2,.thrre3{
+        background-color: #873EFF;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
     }
-    .navbar2{
-        padding: 5px 5px;
+    .menu-toggle{
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
     }
-    .conteiner{
-        width: 301px;
+    .menu-section.on{
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        width: 50vw;
+        height: 100vh;
+        z-index: 10;
+        background-color: #180f31;
         
     }
+    .menu-section.on nav{
+        display: block;
+    }
+
+   
+    .menu-section.on .menu-toggle{
+        position: absolute;
+        top: 15;
+        right: 0;
+        display: block;
+    }
+    .menu-section.on .menu-toggle .one1{
+        transform: rotate(45deg) translate(6px,7px);
+    }
+    .menu-section.on .menu-toggle .two2{
+        opacity: 0;
+    }
+    .menu-section.on .menu-toggle .thrre3{
+        transform: rotate(-45deg) translate(8px,-11px);
+    }
+    .menu-section.on nav ul{
+        text-align: left;
+        
+    }
+    
+    
     .fundo{
         width: 250px;
     }
     header h1{
-        font-size: 140% ;
+        font-size: 190% ;
+    }
+    img{
+        position: absolute;
+        top: 15%;
+        left: 34%;
     }
     
+    
 }
-@media(max-width:420px){
-    .conteudo h2 {
-        font-size: 300%;
-    }
-}
-@media (max-width:344px){
+@media(max-width:430px){
     .conteudo h2 {
         font-size: 250%;
     }
-    .conteiner{
-        width: 301px;
-        
-    }
    
-
-    .navbar,.navbar2{
-        font-size: 70%;
+    img{
+        position: absolute;
+        top: 15%;
+        left: 34%;
     }
-    .navbar{
-        padding-right: 5px;
-    }
-    .navbar2{
-        padding: 3px 3px;
-    }
-    .conteiner{
-        width: 301px;
-        
+    
+}
+@media (max-width:358px){
+    .conteudo h2 {
+        font-size: 240%;
     }
     .fundo{
         width: 250px;
     }
-    header h1{
-        font-size: 130% ;
+    img{
+        position: absolute;
+        top: 15%;
+        left: 30%;
     }
-
+    
 
 }
