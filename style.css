@@ -201,6 +201,9 @@ footer > p{
     .navbar{
         padding-right: 15px;
     }
+    .navbar2{
+        background-color: #873EFF;
+    }
 
     .conteiner{
         width: 401px;
