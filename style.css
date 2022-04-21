@@ -91,14 +91,16 @@ main{
     line-height: 3.8rem;
     width: 90%;
     max-width: 756px;
+    margin-bottom:50px ;
 }
 .conteiner{
     width: 601px;
-    height: 484px;
+    height: 500px;
     border: #873EFF 1px solid;
     border-radius: 6px;
     background-color:  #171228;
     position: relative;
+    
 }
 .fundo{
     width: 500px;
@@ -127,7 +129,8 @@ img{
     font-size: 1.8rem;
 }
 .btns{
-    display: flex;  
+    display: flex;
+    
 }
 .btn1, .btn2{
     font-family: "DM Sans", sans-serif;
@@ -159,7 +162,7 @@ img{
 footer{
     width: 90%;
     max-width: 1130px;
-    margin: 26px auto;
+    margin: 150px auto;
     display: flex;
     text-align: center;
     justify-content: space-between;
@@ -179,6 +182,9 @@ footer > p{
 @media (max-width:874px){
     html{
         font-size: 50%;
+    }
+    .conteiner{
+        height: 450px;
     }
 }
 @media (max-width:708px){
@@ -227,63 +233,22 @@ footer > p{
     }
 }
 @media (max-width:452px){
+    header,nav{
+        flex-wrap: wrap;
+        
+    }
 
     nav{
-        display: none;
+        margin: auto;
+        margin-top: 40px;
     }
-    .one1,.two2,.thrre3{
-        background-color: #873EFF;
-        height: 5px;
-        width: 100%;
-        margin: 6px auto;
-        transition-duration: 0.3s;
-    }
-    .menu-toggle{
-        width: 40px;
-        height: 30px;
-        margin-right: 20px;
-    }
-    .menu-section.on{
-        position: absolute;
-        top: 0%;
-        right: 0%;
-        width: 50vw;
-        height: 100vh;
-        z-index: 10;
-        background-color: #180f31;
-        
-    }
-    .menu-section.on nav{
-        display: block;
-    }
-
-   
-    .menu-section.on .menu-toggle{
-        position: absolute;
-        top: 15;
-        right: 0;
-        display: block;
-    }
-    .menu-section.on .menu-toggle .one1{
-        transform: rotate(45deg) translate(6px,7px);
-    }
-    .menu-section.on .menu-toggle .two2{
-        opacity: 0;
-    }
-    .menu-section.on .menu-toggle .thrre3{
-        transform: rotate(-45deg) translate(8px,-11px);
-    }
-    .menu-section.on nav ul{
-        text-align: left;
-        
-    }
-    
-    
     .fundo{
         width: 250px;
     }
     header h1{
-        font-size: 190% ;
+        font-size: 290% ;
+        margin: auto;
+        
     }
     img{
         position: absolute;
