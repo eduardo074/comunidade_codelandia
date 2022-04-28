@@ -109,6 +109,11 @@ main{
     margin-top: 23px;
     background-color: #0E091B;
 }
+.imgprojeto{
+    max-width: 100%;
+    max-height: 100%;
+}
+
 img{
     width: 120px;
     height: 120px;
@@ -116,6 +121,7 @@ img{
     top: 14%;
     left: 40%;
 }
+
 .principal h3{
     font-size: 2.4rem;
     font-family: "IBM Plex Mono", Helvetica, sans-serif;
